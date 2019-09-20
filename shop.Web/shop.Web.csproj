@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -183,6 +191,24 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\shop.common\shop.common.csproj">
+      <Project>{93f8e042-339b-4e7d-ad21-736fdc70cb53}</Project>
+      <Name>shop.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shop.Data\shop.Data.csproj">
+      <Project>{fb110b1c-43af-40e3-8e76-2dc4a95e34b3}</Project>
+      <Name>shop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shop.Model\shop.Model.csproj">
+      <Project>{a70f12a6-27f4-48cf-907a-332fc0225111}</Project>
+      <Name>shop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shop.Service\shop.Service.csproj">
+      <Project>{0f042623-749b-43d7-b8d6-28eef3b64c60}</Project>
+      <Name>shop.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
