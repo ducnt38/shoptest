@@ -27,4 +27,8 @@ namespace shop.Model.Abtract
         [MaxLength(256)]
         public string MetaDescription { set; get; }
     }
+
+    class Audiable
+    {
+    }
 }

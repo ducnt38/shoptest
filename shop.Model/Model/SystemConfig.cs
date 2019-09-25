@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace shop.Model.Model
 {
-    [Table("MenuGroups")]
-    public class MenuGroup
+    [Table("SystemConfigs")]
+    public class SystemConfig
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int GroupID { set; get; }
+        public int SystemID { set; get; }
 
-        [Required]
-        public string Name { set; get; }
+        public string? Code { set; get; }
 
-        public virtual IEnumerable<Menu> Menus { set; get; }
+        public string? ValueString { set; get; }
+
+        public int? ValueInt { set; get; }
     }
 }

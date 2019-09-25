@@ -12,6 +12,7 @@ namespace shop.Model.Model
     public class Page
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PageID { set; get; }
 
         [Required]

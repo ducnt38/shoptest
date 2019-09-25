@@ -13,6 +13,7 @@ namespace shop.Model.Model
     public class Order
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderID { set; get; }
 
         public virtual IEnumerable<OrderDetail> OrderDetail { set; get; }

@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace shop.Model.Model
 {
-    [Table("MenuGroups")]
-    public class MenuGroup
+    [Table("VisitorStatistics")]
+    public class VisitorStatistic
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int GroupID { set; get; }
+        public string VisitorID { set; get; }
 
         [Required]
-        public string Name { set; get; }
+        public DateTime VisitedDate { set; get; }
 
-        public virtual IEnumerable<Menu> Menus { set; get; }
+        [Required]
+        public string IPAddress { set; get; }
     }
 }

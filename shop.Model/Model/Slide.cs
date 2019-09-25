@@ -8,16 +8,22 @@ using System.Threading.Tasks;
 
 namespace shop.Model.Model
 {
-    [Table("MenuGroups")]
-    public class MenuGroup
+    [Table("Slides")]
+    public class Slide
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int GroupID { set; get; }
+        public int SlideID { set; get; }
 
-        [Required]
         public string Name { set; get; }
 
-        public virtual IEnumerable<Menu> Menus { set; get; }
+        public string Description { set; get; }
+
+        public string Image { set; get; }
+
+        public string URL { set; get; }
+
+        public int? DisplayOrder { set; get; }
+
+        public bool? Status { set; get; }
     }
 }

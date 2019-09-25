@@ -8,16 +8,25 @@ using System.Threading.Tasks;
 
 namespace shop.Model.Model
 {
-    [Table("MenuGroups")]
-    public class MenuGroup
+    [Table("SupportOnlines")]
+    public class SupportOnline
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int GroupID { set; get; }
+        public int SupportID { set; get; }
 
-        [Required]
         public string Name { set; get; }
 
-        public virtual IEnumerable<Menu> Menus { set; get; }
+        public string Department { set; get; }
+
+        public string Skype { set; get; }
+
+        public string Facebook { set; get; }
+
+        public string Mobile { set; get; }
+
+        public string Email { set; get; }
+
+        public bool Status { set; get; }
     }
 }

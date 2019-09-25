@@ -12,6 +12,7 @@ namespace shop.Model.Model
     public class Menu
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MenuID { set; get; }
 
         [Required]
