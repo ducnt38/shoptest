@@ -16,6 +16,7 @@ namespace shop.Model.Model
         public int PageID { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
 
         public string Content { set; get; }

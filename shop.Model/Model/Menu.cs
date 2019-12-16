@@ -16,14 +16,17 @@ namespace shop.Model.Model
         public int MenuID { set; get; }
 
         [Required]
+        [MaxLength(50)]
         public string Name { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string URL { set; get; }
 
         public int? DisplayOrder { set; get; }
 
         [Required]
+        [MaxLength(10)]
         public int GroupID { set; get; }
 
         [ForeignKey("GroupID")]

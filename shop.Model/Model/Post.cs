@@ -25,8 +25,10 @@ namespace shop.Model.Model
         [Required]
         public int PostCateID { set; get; }
 
+        [MaxLength(256)]
         public string? Image { set; get; }
 
+        [MaxLength(500)]
         public string? Description { set; get; }
 
         [Required]

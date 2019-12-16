@@ -12,9 +12,11 @@ namespace shop.Model.Model
     public class Tag
     {
         [Key]
+        [MaxLength(50)]
         public string TagID { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
 
         public string Type { set; get; }

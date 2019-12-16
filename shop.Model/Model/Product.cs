@@ -19,13 +19,16 @@ namespace shop.Model.Model
         public int ProductID { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
 
+        [MaxLength(256)]
         public string Alias { set; get; }
 
         [Required]
         public int CateID { set; get; }
 
+        [MaxLength(256)]
         public string Image { set; get; }
 
         public XElement MoreImages { set; get; }

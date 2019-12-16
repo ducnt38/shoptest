@@ -12,6 +12,7 @@ namespace shop.Model.Model
     public class Footer
     {
         [Key]
+        [MaxLength(50)]
         public string FooterID { set; get; }
 
         [Required]

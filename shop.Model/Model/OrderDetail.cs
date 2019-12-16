@@ -12,7 +12,7 @@ namespace shop.Model.Model
     public class OrderDetail
     {
         [ForeignKey("OrderID")]
-        public virtual OrderDetail OrderDetails { set; get; }
+        public virtual Order Order { set; get; }
 
         [Required]
         public int OrderID { set; get; }

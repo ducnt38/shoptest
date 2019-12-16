@@ -14,12 +14,16 @@ namespace shop.Model.Model
         [Key]
         public int SlideID { set; get; }
 
+        [MaxLength(256)]
         public string Name { set; get; }
 
+        [MaxLength(500)]
         public string Description { set; get; }
 
+        [MaxLength(256)]
         public string Image { set; get; }
 
+        [MaxLength(256)]
         public string URL { set; get; }
 
         public int? DisplayOrder { set; get; }

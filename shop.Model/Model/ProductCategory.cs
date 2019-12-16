@@ -17,10 +17,13 @@ namespace shop.Model.Model
         public int CateID { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
         public string Alias { set; get; }
         public int? ParentID { set; get; }
         public int? DisplayOrder { set; get; }
+
+        [MaxLength(256)]
         public string Image { set; get; }
         public bool? HomeFlag { set; get; }
 

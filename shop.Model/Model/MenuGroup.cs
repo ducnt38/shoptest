@@ -16,6 +16,7 @@ namespace shop.Model.Model
         public int GroupID { set; get; }
 
         [Required]
+        [MaxLength(50)]
         public string Name { set; get; }
 
         public virtual IEnumerable<Menu> Menus { set; get; }

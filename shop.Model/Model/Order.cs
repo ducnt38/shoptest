@@ -19,6 +19,7 @@ namespace shop.Model.Model
         public virtual IEnumerable<OrderDetail> OrderDetail { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string CustomerName { set; get; }
 
         public string CustomerAddress { set; get; }
@@ -26,14 +27,17 @@ namespace shop.Model.Model
         public string CustomerEmail { set; get; }
 
         [Required]
+        [MaxLength(50)]
         public string CustomerMobile { set; get; }
 
+        [MaxLength(256)]
         public string CustomerMessage { set; get; }
 
         public string CreateDate { set; get; }
 
         public string CreateBy { set; get; }
 
+        [MaxLength(256)]
         public string PaymentMethod { set; get; }
 
         public string PaymentStatus { set; get; }

@@ -15,6 +15,7 @@ namespace shop.Model.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int SupportID { set; get; }
 
+        [MaxLength(256)]
         public string Name { set; get; }
 
         public string Department { set; get; }

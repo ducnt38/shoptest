@@ -17,17 +17,21 @@ namespace shop.Model.Model
         public int PostCateID { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
 
+        [Column(TypeName="varchar")]
         [Required]
         public string Alias { set; get; }
 
+        [MaxLength(500)]
         public string Description { set; get; }
 
         public int? ParenID { set; get; }
 
         public int? DisplayOrder { set; get; }
 
+        [MaxLength(256)]
         public string? Image { set; get; }
 
         public bool? HomeFlag { set; get; }
