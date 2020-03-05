@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace shop.Data.Infrastructure
 {
     //Dinh nghia giao tiep cho cac class
-    class IDbFactory
+    public interface IDbFactory : IDisposable
     {
+        ShopDbContext Init();
     }
 }

@@ -50,9 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbContent.cs" />
+    <Compile Include="Infrastructure\DBFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\IDbFactory.cs" />
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\IUniOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShopDbContext.cs" />
   </ItemGroup>
@@ -64,6 +68,10 @@
     <ProjectReference Include="..\shop.common\shop.common.csproj">
       <Project>{93f8e042-339b-4e7d-ad21-736fdc70cb53}</Project>
       <Name>shop.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shop.Model\shop.Model.csproj">
+      <Project>{a70f12a6-27f4-48cf-907a-332fc0225111}</Project>
+      <Name>shop.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
